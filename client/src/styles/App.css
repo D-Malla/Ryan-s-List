@@ -1,0 +1,204 @@
+html {box-sizing:border-box;}
+*, *::before, *::after {box-sizing:inherit;}
+
+/* LAYOUT STYLING */
+.middleContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  max-width: 100%;
+}
+
+.insideMiddleContainer  {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 20px;
+
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+
+/* HEADER STYLING */
+header {
+  background: rgb(238, 238, 238);
+  border-bottom: .5px solid lightgray;
+  border-top: .5px solid lightgray;
+  height: 50px;
+  text-align: center;
+  width: 700px;
+}
+
+header h2 {
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
+
+/* LEFT ASIDE STYLING */
+#leftAside {
+  background: rgb(238, 238, 238);
+  border-left: .5px solid lightgray;
+  border-right: .5px solid lightgray;
+  height: 100%;
+  text-align: center;
+  width: 175px;
+}
+
+#leftAside #leftAsideHeading h1 {
+  font-weight: lighter;
+  margin: 5px 0 20px 0;
+}
+
+#leftAside #leftAsideHeading h1 a {
+  text-decoration: none;
+}
+
+#leftAside #leftAsideHeading h1 a:hover {
+  color: rgb(127, 14, 126);
+  text-decoration: underline;
+}
+
+#leftAside #leftAsideHeading p .highlight {
+  background: rgb(255, 254, 206);
+}
+
+#leftAside #leftAsideHeading p {
+  font-family: sans-serif;
+  font-size: 15px;
+  margin: 8px;
+}
+
+#leftAside p a {
+  color: blue;
+  text-decoration: none;
+}
+
+#leftAside p a:hover {
+  color: rgb(127, 14, 126);
+  text-decoration: underline;
+}
+
+#leftAside #leftAsideSearchCal input {
+  border: .5px solid lightgray;
+  border-radius: 3px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+#leftAside #leftAsideSearchCal p {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 12px;
+}
+
+#leftAside #leftAsideSearchCal .cal {
+  margin: 0 auto;
+  width: 100px;
+}
+
+#leftAside #leftAsideLinksOne,
+#leftAside #leftAsideLinksTwo {
+  font-family: sans-serif;
+  font-size: 13px;
+  margin: 40px 0;
+}
+
+
+/* RIGHT ASIDE STYLING */
+#rightAside {
+  background: rgb(238, 238, 238);
+  border-left: .5px solid lightgray;
+  border-right: .5px solid lightgray;
+  font-family: sans-serif;
+  font-weight: lighter;
+  height: 100%;
+  padding: 10px 5px;
+  text-align: center;
+  width: 150px;
+}
+
+#rightAsideLocations h5 {
+  background: white;
+  border-bottom: .5px solid lightgray;
+  border-top: .5px solid lightgray;
+  line-height: 20px;
+}
+
+#rightAsideLocations .expand .acitem li {
+  font-size: 13px;
+  list-style: none;
+
+}
+
+#rightAsideLocations .expand .acitem li a {
+  text-decoration: none;
+}
+
+#rightAsideLocations .expand .acitem li a:hover {
+  color: rgb(127, 14, 126);
+  text-decoration: underline;
+}
+
+/* MAIN CONTENT STYLING */
+#mainContent {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#mainContent .mainRow .listingHeading h3 {
+  background: rgb(238, 238, 238);
+  border-bottom: .5px solid lightgray;
+  border-top: .5px solid lightgray;
+}
+
+
+/* FOOTER STYLING */
+footer {
+  background: rgb(238, 238, 238);
+  border-bottom: .5px solid lightgray;
+  border-top: .5px solid lightgray;
+  height: 40px;
+  margin: 0;
+  width: 100%;
+}
+
+footer ul {
+  display: flex;
+  font-family: sans-serif;
+  justify-content: center;
+  margin: 0;
+  padding-top: 12px;
+}
+
+footer  ul li {
+  font-size: 14px;
+  list-style: none;
+  margin: 0px 10px;
+}
+
+footer  ul li a{
+  color: blue;
+  text-decoration: none;
+}
+
+footer  ul li a:hover{
+  color: rgb(127, 14, 126);
+  text-decoration: underline;
+}
+
+::placeholder {
+  font-size: 20px;
+  padding-left: 3px;
+}
