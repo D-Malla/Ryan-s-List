@@ -1,11 +1,11 @@
 import React from 'react'
-import '../styles/App.css'
+import '../../styles/MainPage.css'
 
 export default props => {
   return (
     <div id='leftAside'>
       <div id='leftAsideHeading'>
-        <h1><a href='#'>craigslist</a></h1>
+        <h1><a href='#'>ryanslist</a></h1>
         <p><a className='highlight' href='#'>create a posting</a></p>
         <p><a href='#'>my account</a></p>
       </div>

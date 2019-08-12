@@ -1,26 +1,26 @@
 import React from 'react'
-import '../styles/App.css'
+import '../../styles/MainPage.css'
 
 export default props => {
   return (
     <div id='rightAside'>
       <div id='rightAsideDropdown'>
       <select name="lang" id="chlang" className="js-only">
-        <option value="?lang=da&amp;setlang=1">dansk</option>
-        <option value="?lang=de&amp;setlang=1">deutsch</option>
-        <option selected="" value="?lang=en&amp;cc=us&amp;setlang=1">english</option>
-        <option value="?lang=es&amp;cc=mx&amp;setlang=1">español</option>
-        <option value="?lang=fr&amp;setlang=1">français</option>
-        <option value="?lang=it&amp;setlang=1">italiano</option>
-        <option value="?lang=pt&amp;setlang=1">português</option>
-        <option value="?lang=fi&amp;setlang=1">suomi</option>
-        <option value="?lang=sv&amp;setlang=1">svenska</option>
-        <option value="?lang=vi&amp;setlang=1">tiếng việt</option>
-        <option value="?lang=tr&amp;setlang=1">türkçe</option>
-        <option value="?lang=ru&amp;setlang=1">русский</option>
-        <option value="?lang=zh&amp;setlang=1">中文</option>
-        <option value="?lang=ja&amp;setlang=1">日本語</option>
-        <option value="?lang=ko&amp;setlang=1">한국말</option>
+        <option>dansk</option>
+        <option >deutsch</option>
+        <option >english</option>
+        <option >español</option>
+        <option>français</option>
+        <option>italiano</option>
+        <option>português</option>
+        <option>suomi</option>
+        <option>svenska</option>
+        <option>tiếng việt</option>
+        <option>türkçe</option>
+        <option>русский</option>
+        <option>中文</option>
+        <option>日本語</option>
+        <option>한국말</option>
     </select>
       </div>
       <div id='rightAsideLocations'>

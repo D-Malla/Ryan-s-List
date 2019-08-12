@@ -1,29 +1,23 @@
 import React from 'react'
 import 'normalize.css/normalize.css'
-import '../styles/App.css'
+import './../styles/MainPage.css'
 import { Provider } from 'react-redux'
 import store from '../store'
-
-import Header from './Header'
-import Footer from './Footer'
-import LeftAside from './LeftAside'
-import RightAside from './RightAside'
-import MainContent from './MainContent'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import MainContent from './Main Page/MainContent'
+import ListMain from './posting_list/ListMain'
+import PostMain from './post_detail/PostMain'
 
 export default props => {
   return (
     <Provider store={store}>
-      <div id='container'>  
-        <div className='middleContainer'>
-          <LeftAside />
-          <div className='insideMiddleContainer'>
-            <Header />
-            <MainContent />
-          </div>
-          <RightAside />
+      <Router>
+        <div>
+          <Route exact path='/' component={MainContent}/>
+          <Route path={'/listmain/:slug'} component={ListMain}/>
+          <Route path='/postmain' component={PostMain}/>
         </div>
-        <Footer />
-      </div>
+      </Router>
     </Provider>
   )
 }

@@ -1,11 +1,11 @@
 import React from 'react'
-import '../styles/App.css'
+import '../../styles/MainPage.css'
 
 export default props => {
   return (
     <footer>
       <ul>
-        <li>© craigslist</li>
+        <li>© ryanslist</li>
         <li><a href='#'>help</a></li>
         <li><a href='#'>safety</a></li>
         <li><a href='#'>privacy</a></li>

@@ -1,0 +1,206 @@
+html {box-sizing:border-box; font-family: sans-serif;}
+*, *::before, *::after {box-sizing:inherit;}
+
+/* GENERAL STYLING */
+body {
+  background: rgb(250, 250, 250);
+}
+a {
+  text-decoration: none;
+}
+
+/* LAYOUT STYLING */
+/* HEADER STYLING */
+#ListHead {
+  display: flex;
+  background: rgb(238, 238, 238);
+  border-bottom: .5px solid lightgray;
+  border-top: .5px solid lightgray;
+  height: 40px;
+  width: 100%;
+}
+
+header #leftHeadDiv {
+  display: flex;
+  justify-content: left;
+  width: 50%;
+}
+
+header #leftHeadDiv a {
+  padding-top: 10px;
+  margin-left: 5px
+}
+
+header #leftHeadDiv .navList{
+  display: flex;
+  margin-top: 10px;
+  padding: 0
+}
+
+header #leftHeadDiv .navList .dropdown {
+  margin: 0 8px;
+  
+}
+
+header #leftHeadDiv .navList .dropdown select {
+  font-size: 12px;
+  height: 5px;
+}
+
+header #rightHeadDiv {
+  display: flex;
+  font-size: 14px;
+  font-weight: normal;
+  justify-content: right;
+  padding-left: 527px;
+  width: 50%;
+}
+
+header #rightHeadDiv p {
+  display: inline;
+  margin: 11px 0px;
+}
+
+header #rightHeadDiv #post {
+  border-right: .5px solid lightgray;
+  height: 20px;
+  width: 50px;
+}
+
+header #rightHeadDiv #account {
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+header .headerLogo {
+  background: white;
+  border: .5px solid lightgray;
+  border-radius: 50%;
+  display: inline;
+  font-size: 18px;
+  font-weight: lighter;
+  padding: 5px;
+  text-decoration: none;
+}
+
+
+
+
+/* MAIN STYLING */
+#listContent {
+  display: flex;
+}
+
+#innerListContent {
+  background: white;
+  border-left: .5px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  width: 100%;
+}
+
+#innerListContent #listSearchDiv {
+  display: flex;
+  left: 230px;
+  position: fixed;
+  top: 55px;
+
+}
+
+#innerListContent #listSearchDiv input {
+  height: 38px;
+  width: 720px;
+}
+
+#innerListContent #listSearchDiv button {
+  border-radius: 3px;
+  height: 38px;
+  margin-left: 10px;
+  width: 38px;
+}
+
+#innerListContent #listSearchDiv p {
+  font-size: 13px;
+  height: 40px;
+  margin-left: 15px;
+  padding-bottom: 47px;
+  width: 40px;
+}
+
+#innerListContent #listMainBody {
+  min-height: 200px;
+}
+
+/* ASIDE STYLING */
+aside {
+  background: white;
+  border-right: .5px solid lightgray;
+  height: 100%;
+  padding: 10px;
+  width: 225px;
+}
+
+#listAsideMiles {
+  display: flex;
+}
+
+#listAsideMiles input {
+  border: .5px solid lightgray;
+  border-radius: 3px;
+  height: 22px;
+  margin: 0 3px;
+  width: 60px;
+}
+
+#listAsideMiles .miles {
+  margin-left: 12px;
+}
+
+#listSearchButtons {
+  font-size: 14px;
+  margin: 20px 5px;
+}
+
+#listSearchButtons .reset {
+  background: none;
+  border: none;
+  color: blue;
+}
+
+#listSearchButtons .update {
+  border-radius: 3px;
+  height: 30px;
+  margin-left: 25px;
+  width: 105px;
+}
+
+/* FOOTER STYLING */
+footer {
+  display: flex;
+  background: rgb(238, 238, 238);
+  border-top: .5px solid lightgray;
+  height: 40px;
+  width: 100%;
+}
+
+footer #listFooterLeft {
+  display: flex;
+  justify-content: space-evenly;
+  width: 92%;
+
+}
+
+footer #listFooterRight {
+  display: flex;
+  justify-content: right;
+  width: 8%;
+}
+
+footer #listFooterRight p {
+  margin: 10px 5px;
+}
+
+::placeholder {
+  font-size: 14px;
+}
