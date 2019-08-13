@@ -1,8 +1,8 @@
 import store from '../store'
 import axios from 'axios'
 
-export function mainCategories() {
-  axios.get('/api/category').then(resp => {
+export function getCategories() {
+  axios.get('/api/categories').then(resp => {
     store.dispatch({
       type: 'CATEGORIES',
       payload: resp.data.categories
@@ -10,21 +10,13 @@ export function mainCategories() {
   })
 }
 
-export function matchListings(slug) {
-  axios.get("/api/listings/" + slug).then(resp => {
+export function getPosts(slug) {
+  axios.get("/api/posts/" + slug).then(resp => {
     store.dispatch({
-      type: "LISTINGS",
+      type: "GET_POSTS",
       payload: resp.data
     })
   })
 }
 
-export function postListings(title) {
-  axios.get("/api/listings/" + title).then (resp => {
-    store.dispatch ({
-      type: "POSTS", 
-      payload: resp.data.title
-    })
-  })
-}
 

@@ -151,28 +151,51 @@ header h2 {
 
 /* MAIN CONTENT STYLING */
 #mainContent {
-  height: 100%;
-  width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+margin: 20px 0;
+ width: 700px;
 }
 
-#mainContent .mainRow {
+#mainContent .catContainer {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  height: 100%;
+  width: 33%;
 }
 
-#mainContent .mainRow h1 {
+#mainContent .catContainer h1 {
   background: rgb(238, 238, 238);
   border-bottom: .5px solid lightgray;
   border-top: .5px solid lightgray;
   font-size: 16px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  width: 70%;
 }
 
-#mainContent #subrow {
+#mainContent #subcats {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 85px;
+}
+
+#mainContent #subcats a {
+  line-height: 15px;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+}
+
+#mainContent #subcats p {
+  border-bottom: .5px solid lightgray;
+  font-size: 12px;
+  margin: 2px 0px;
+  width: 63px;
+  text-align: center;
 }
 
 

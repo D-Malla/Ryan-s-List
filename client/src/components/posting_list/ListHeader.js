@@ -27,7 +27,7 @@ export default props => {
           <span className="dropdownArrow">&gt;</span>
           <li className="dropdown section">
             <select id="catAbb">
-              <option value="ccc" selected="">community</option>
+              <option value="ccc" defaultValue>community</option>
               <option value="eee">events</option>
               <option value="sss">for sale</option>
               <option value="ggg">gigs</option>
@@ -41,7 +41,7 @@ export default props => {
           <li className="dropdown category">
             <select id="subcatAbb" className="js-only">
               <option value="ccc">all</option>
-              <option value="act" selected>activity partners</option>
+              <option value="act" defaultValue>activity partners</option>
               <option value="ats">artists</option>
               <option value="kid">childcare</option>
               <option value="com">general</option>

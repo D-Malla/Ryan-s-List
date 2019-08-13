@@ -1,7 +1,7 @@
 import React, { useEffect }  from 'react'
 import '../../styles/MainPage.css'
 import { useSelector } from 'react-redux'
-import { mainCategories } from '../../actions/ryanslist.actions'
+import { getCategories } from '../../actions/ryanslist.actions'
 import { Link } from 'react-router-dom'
 
 import Header from './Header'
@@ -14,8 +14,7 @@ export default props => {
   
 
   useEffect(() => {
-    mainCategories()
-    console.log(categories)
+    getCategories()
   }, [])
 
 
@@ -26,16 +25,16 @@ export default props => {
         <div className='insideMiddleContainer'>
           <Header />
           <div id='mainContent'>
-            <div className='mainRow'>
                 {categories.map(item => (
-                  <div>
-                  <h1>{item.name}</h1>
+                  <div className='catContainer'>
+                  <h1><Link to={'/' + item.slug}>{item.name}</Link></h1>
                   {item.subcat.map(cat => (
-                    <Link to={'/listmain/' + cat.slug}><p>{cat.name}</p></Link>
+                    <div id="subcats">
+                    <Link to={'/' + cat.slug}><p>{cat.name}</p></Link>
+                    </div>
                   ))}
                   </div>
                 ))}
-            </div>
           </div>
         </div>
         <RightAside />

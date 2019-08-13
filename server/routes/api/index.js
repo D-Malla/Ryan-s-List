@@ -1,7 +1,7 @@
 const router = require('express').Router()
 const conn = require('../../db')
 
-router.get('/category', (req, res, next) => {
+router.get('/categories', (req, res, next) => {
   const sql = `SELECT * FROM categories`
    
   let data = {
@@ -21,26 +21,19 @@ router.get('/category', (req, res, next) => {
   })
 })
 
-router.get('/listings', (req, res, next) => {
-  const sql = `SELECT l.title, l.description, l.id, c.parent_id as parent_id
-  FROM listings l 
-  LEFT JOIN categories c ON l.cat_slug = c.slug
-  WHERE l.cat_slug = "activities" or c.slug = "activities"`
+router.get('/posts/:slug', (req, res, next) => {
+  const slug = req.params.slug
+  
+  const sql = `
+  SELECT p.*
+  FROM posts p
+  LEFT JOIN categories c ON c.id = p.category_id  
+  `
 
-  conn.query(sql, (error, results, fields) => {
+  conn.query(sql, [slug], (error, results, fields) => {
+    res.json(results)
     console.log(results)
   })
 })
-
-router.get('/listings', (req, res, next) => {
-  const sql = `SELECT title, comments, post_time
-  FROM listings`
-
-  conn.query(sql, (error, results, fields) => {
-    console.log(results)
-  })
-})
-
-
 
 module.exports = router

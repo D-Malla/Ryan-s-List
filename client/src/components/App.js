@@ -14,8 +14,8 @@ export default props => {
       <Router>
         <div>
           <Route exact path='/' component={MainContent}/>
-          <Route path={'/listmain/:slug'} component={ListMain}/>
-          <Route path='/postmain' component={PostMain}/>
+          <Route exact path={'/:slug'} component={ListMain}/>
+          <Route path='/post' component={PostMain}/>
         </div>
       </Router>
     </Provider>

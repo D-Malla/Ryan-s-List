@@ -60,7 +60,7 @@ export default props => {
         </ul>
       </div>
       <div id='rightHeadDiv'>
-        <p id='post'>post</p>
+        <Link to={'/post' + props.match.params.slug}><p id='post'>post</p></Link>
         <p id='account'>account</p>
       </div>
     </header>

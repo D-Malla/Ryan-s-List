@@ -136,9 +136,13 @@ header .headerLogo {
 aside {
   background: white;
   border-right: .5px solid lightgray;
-  height: 100%;
+  min-height: 400px;
   padding: 10px;
   width: 225px;
+}
+
+aside h3:hover {
+  text-decoration: underline;
 }
 
 #listAsideMiles {
@@ -158,6 +162,7 @@ aside {
 }
 
 #listSearchButtons {
+  display: flex;
   font-size: 14px;
   margin: 20px 5px;
 }
@@ -166,13 +171,62 @@ aside {
   background: none;
   border: none;
   color: blue;
+  cursor: pointer;
 }
 
 #listSearchButtons .update {
   border-radius: 3px;
+  color: blue;
+  cursor: pointer;
   height: 30px;
   margin-left: 25px;
   width: 105px;
+}
+
+#postingContainer {
+  font-family: serif;
+  margin: 100px 20px;
+  min-height: 400px;
+}
+
+
+#selectionButtons {
+  display: flex;
+  justify-content: center;
+}
+
+#selectionButtons button{
+  height: 20px;
+  width: 20px;
+}
+
+#selectionButtons p {
+  margin: 0;
+}
+
+#postList {
+  display: flex;
+  margin-top: 10px;
+}
+
+#postList p {
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+#postList a:hover {
+  text-decoration: underline;
+}
+
+#postList #star {
+  color: lightgray;
+  font-size: 14px;
+}
+
+#postList #postDate {
+  color: gray;
+  font-size: 10px;
+  padding-top: 3px;
 }
 
 /* FOOTER STYLING */

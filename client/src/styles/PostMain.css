@@ -72,28 +72,82 @@ header .headerLogo {
 }
 
 /* MAINBODY STYLING */
-#selectionButtons {
+#postContainer {
+  margin: 60px auto;
+  width: 1000px;
+}
+
+#upperPostDiv {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-#selectionButtons button{
-  height: 20px;
-  width: 20px;
-}
-
-#selectionButtons p {
-  margin: 0;
+#purpButton {
+  background: rgb(231, 219, 235);
+  border: .5px solid rgb(163, 105, 189);
+  border-radius: 3px;
+  color: rgb(102, 0, 145);
+  height: 35px;
+  width: 65px;
 }
 
 #innerMainDiv {
   display: flex;
 }
 
-#postInfo {
+#innerMainDiv #contentDiv {
+  width: 100%;
+}
+
+#innerMainDiv ul li {
+  font-size: 14px;
+  list-style: disc;
+}
+
+#innerMainDiv #imgDiv {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#innerMainDiv #imgDiv img {
+  height: 300px;
+  width: 300px;
+}
+
+#postInfo {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+#upperPostDiv p {
+  font-size: 14px;
 }
 
 #postDetails {
   display: flex;
+  justify-content: space-evenly;
+  font-size: 12px;
+  width: 500px;
+}
+
+#postDetails button {
+  background: none;
+  border: .5px solid lightgray;
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+#postDetails p a {
+  color: blue;
+  text-decoration: underline;
+}
+
+#postDetails p a span {
+  color: lightgray;
+  margin-right: 5px;
+  text-decoration: none;
 }
