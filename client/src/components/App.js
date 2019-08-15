@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 import MainContent from './Main Page/MainContent'
 import ListMain from './posting_list/ListMain'
 import PostMain from './post_detail/PostMain'
+import CreatePost from './Create/CreatePost.js'
 
 export default props => {
   return (
@@ -16,6 +17,7 @@ export default props => {
           <Route exact path='/' component={MainContent}/>
           <Route exact path={'/:slug'} component={ListMain}/>
           <Route path='/post' component={PostMain}/>
+          <Route path='/create' component={CreatePost}/>
         </div>
       </Router>
     </Provider>
